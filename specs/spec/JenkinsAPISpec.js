@@ -7,10 +7,6 @@ describe("Jenkins API", function() {
     api = new JenkinsAPI(baseTestUrl);
   });
 
-  afterEach(function() {
-
-  });
-
   it("getAPIUrl should return root API url for json", function() {
     expect(api.getAPIUrl()).toEqual(baseTestUrl + '/api/json?jsonp=?');
   });
